@@ -256,9 +256,9 @@ clear b
 S = 100;
 O = O*S;
 hold on;
-quiver3(c(1),c(2),c(3),O(1,1),O(1,2),O(1,3),'LineWidth',5,'Color','red');
-quiver3(c(1),c(2),c(3),O(2,1),O(2,2),O(2,3),'LineWidth',5,'Color','red');
-quiver3(c(1),c(2),c(3),O(3,1),O(3,2),O(3,3),'LineWidth',5,'Color','red');
+quiver3(c(1),c(2),c(3),O(1,1),O(2,1),O(3,1),'LineWidth',5,'Color','red');
+quiver3(c(1),c(2),c(3),O(1,2),O(2,2),O(3,2),'LineWidth',5,'Color','green');
+quiver3(c(1),c(2),c(3),O(1,3),O(2,3),O(3,3),'LineWidth',5,'Color','blue');
 hold off;
 
 clear O S
@@ -268,7 +268,7 @@ clear O S
 %% fit contour lines (robust fitting on cloud features)
 k = 100;
 dist = 8;
-n_samples = 100;
+n_samples = 50;
 
 % divide rectangle in features (4 corners and 4 sides)
 [idxs,C] = kmeans(PB,8);
