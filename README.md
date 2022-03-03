@@ -1,4 +1,4 @@
-⚠️ Cari colleghi italiani: le star sono gratis 😉
+⚠ Dear UNIVR colleagues, stars are free of charge ;) ⚠
 
 # Robotics, Vision & Control
 "Robotics, Vision &amp; Control" course's MATLAB assignments.
